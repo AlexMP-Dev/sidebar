@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible Sidebar Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="overlay"></div>
+
+    <div class="sidebar">
+      <!-- Header -->
+      <div class="sidebar-header">
+        <i class="fas fa-cube brand-logo"></i>
+        <span class="brand-name"> Contech</span>
+        
+      </div>
+
+      <!-- Body -->
+      <div class="sidebar-body">
+        <button class="sidebar-button">
+          <i class="fas fa-home button-icon"></i>
+          <span class="button-text">Home</span>
+        </button>
+        <button class="sidebar-button">
+          <i class="fas fa-chart-bar button-icon"></i>
+          <span class="button-text">Dashboard</span>
+        </button>
+        <div class="collapsible">
+          <button class="sidebar-button collapsible-trigger">
+            <i class="fas fa-cog button-icon"></i>
+            <span class="button-text">Settings</span>
+            <i class="fas fa-chevron-down chevron-icon"></i>
+          </button>
+          <div class="collapsible-content">
+            <button class="sidebar-button sub-button">
+              <span class="button-text">General</span>
+            </button>
+            <button class="sidebar-button sub-button">
+              <span class="button-text">Security</span>
+            </button>
+            <button class="sidebar-button sub-button">
+              <span class="button-text">Privacy</span>
+            </button>
+          </div>
+        </div>
+        <div class="collapsible">
+          <button class="sidebar-button collapsible-trigger">
+            <i class="fas fa-question-circle button-icon"></i>
+            <span class="button-text">Help</span>
+            <i class="fas fa-chevron-down chevron-icon"></i>
+          </button>
+          <div class="collapsible-content">
+            <button class="sidebar-button sub-button">
+              <span class="button-text">FAQ</span>
+            </button>
+            <button class="sidebar-button sub-button">
+              <span class="button-text">Contact Support</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="sidebar-footer">
+        <img src="https://github.com/shadcn.png" alt="User" class="avatar" />
+        <div class="user-info">
+          <p class="user-name">John Doe</p>
+          <p class="user-email">john@example.com</p>
+        </div>
+        <button class="logout-button">
+          <i class="fas fa-sign-out-alt logout-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav class="navbar">
+      <button class="mobile-toggle-button" aria-label="Open Sidebar">
+        <i class="fas fa-cube brand-logo"></i>
+      </button>
+      <i class="fas fa-bars desktop-toggle"></i>
+      <h1>Contech</h1>
+    </nav>
+
+    <div class="content">
+      <h1>Main Content Area 2</h1>
+      <p>This is where your main content would go.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
