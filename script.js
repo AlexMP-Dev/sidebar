@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.querySelector('.sidebar');
-    const toggleButton = document.querySelector('.toggle-button');
+    /*const toggleButton = document.querySelector('.toggle-button');*/
     const collapsibles = document.querySelectorAll('.collapsible');
     const content = document.querySelector('.content');
     const mobileToggle = document.querySelector('.mobile-toggle-button');
     const desktopToggle = document.querySelector('.desktop-toggle');
 
-    if(toggleButton != null) {
+    /*if(toggleButton != null) {
         toggleButton.addEventListener('click', function() {
         sidebar.classList.toggle('closed');
         content.style.marginLeft = sidebar.classList.contains('closed') ? '60px' : '250px';
     });
-    }
+    }*/
     
     mobileToggle.addEventListener('click', function() {
         document.querySelector('.overlay').classList.toggle('active');
